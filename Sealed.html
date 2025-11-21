@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Secret Lair Galleries</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f5f5f5;
+      margin: 0;
+      padding: 0;
+    }
+    nav {
+      background: #1a252f;
+      padding: 10px;
+      text-align: center;
+    }
+    nav a {
+      display: inline-block;
+      margin: 0 10px;
+      padding: 10px 20px;
+      color: white;
+      background: #2c3e50;
+      border-radius: 5px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background 0.3s;
+    }
+    nav a:hover {
+      background: #34495e;
+    }
+    header {
+      background: #2c3e50;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin: 20px;
+    }
+    .card {
+      background: white;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+      margin: 15px;
+      width: 320px;
+      padding: 15px;
+    }
+    .card h3 {
+      margin-top: 10px;
+    }
+    .gallery {
+      position: relative;
+      overflow: hidden;
+      border-radius: 6px;
+    }
+    .gallery img {
+      width: 100%;
+      display: none;
+    }
+    .gallery img.active {
+      display: block;
+    }
+    .gallery button {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      background: rgba(0,0,0,0.5);
+      color: white;
+      border: none;
+      padding: 8px;
+      cursor: pointer;
+    }
+    .gallery .prev { left: 5px; }
+    .gallery .next { right: 5px; }
+    footer {
+      background: #2c3e50;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      margin-top: 30px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation bar -->
+  <nav>
+    <a href="index.html">Secret Lairs</a>
+    <a href="Sealed.html">Sealed Product</a>
+  </nav>
+
+  <header>
+    <h1>Magic: The Gathering – Sealed Product for Sale</h1>
+  </header>
+
+
+
+  <div class="container">
+
+    <div class="card">
+      <h3>Mystery Booster 2019 Convention Edition</h3>
+      <div class="gallery">
+        <img src="Mystery_Booster_logo.png" class="active" alt="MB1">
+      </div>
+      <p><strong>Price: C$230</strong></p>
+    </div>
+
+    <div class="card">
+      <h3>Brother's War Draft Booster Box</h3>
+      <div class="gallery">
+        <img src="brotherswar.jpg" class="active" alt="BW">
+        <img src="https://cards.scryfall.io/normal/front/1/1/1138ab11-ab70-44df-9691-ddee39c3ae45.jpg?1747972039" alt="Weapons 2">
+        <img src="https://cards.scryfall.io/normal/front/3/2/32a46d1d-df85-4388-acd6-91818aa9af80.jpg?1759415758" alt="Weapons 3">
+        <img src="https://cards.scryfall.io/normal/front/9/e/9e42aded-44be-4b3a-9b2c-80ae43835e3d.jpg?1747972030" alt="Weapons 4">
+        <img src="https://cards.scryfall.io/normal/front/f/5/f5208aff-a33e-48d9-94eb-98a517099741.jpg?1747972024" alt="Weapons 5">
+      </div>
+      <p><strong>Price: C$125</strong></p>
+    </div>
+
+    <div class="card">
+      <h3>Phyrexia: All Will Be One Draft Booster Box</h3>
+      <div class="gallery">
+        <img src="allwillbeone.jpg" class="active" alt="ONE">
+      </div>
+      <p><strong>Price: C$130</strong></p>
+    </div>
+
+    <div class="card">
+      <h3>Kaldheim Commander Phantom Premonition </h3>
+      <div class="gallery">
+        <img src="kaldprem.jpg" class="active" alt="Commander1">
+      </div>
+      <p><strong>Price: C$45</strong></p>
+    </div>
+
+    <div class="card">
+      <h3>Kamigawa Neon Dynasty Commander Upgrade Unleashed
+</h3>
+      <div class="gallery">
+        <img src="upgradeunleashed.jpg" class="active" alt="Commander2">
+      </div>
+      <p><strong>Price: C$75</strong></p>
+    </div>
+
+    <div class="card">
+      <h3>Buckle Up</h3>
+      <div class="gallery">
+        <img src="buckleup.jpg" class="active" alt="Commander 3">
+      </div>
+      <p><strong>Price: C$100</strong></p>
+    </div>
+
+    <div class="card">
+      <h3>Zendikar Rising Commander Sneak Attack</h3>
+      <div class="gallery">
+        <img src="sneakattack.jpg" class="active" alt="commander4">
+      </div>
+      <p><strong>Price: C$45</strong></p>
+    </div>
+    <div class="card">
+      <h3>12 x Lord of the Rings Set Boosters</h3>
+      <div class="gallery">
+        <img src="lotr.jpg" class="active" alt="lotr">
+      </div>
+      <p><strong>Price: C$160</strong></p>
+    </div>
+</div>
+
+  <script>
+    // Simple gallery script
+    document.querySelectorAll('.gallery').forEach(gallery => {
+      let images = gallery.querySelectorAll('img');
+      let index = 0;
+
+      gallery.querySelector('.next').addEventListener('click', () => {
+        images[index].classList.remove('active');
+        index = (index + 1) % images.length;
+        images[index].classList.add('active');
+      });
+
+      gallery.querySelector('.prev').addEventListener('click', () => {
+        images[index].classList.remove('active');
+        index = (index - 1 + images.length) % images.length;
+        images[index].classList.add('active');
+      });
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Secret Lair Galleries</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f5f5f5;
+      margin: 0;
+      padding: 0;
+    }
+    nav {
+      background: #1a252f;
+      padding: 10px;
+      text-align: center;
+    }
+    nav a {
+      display: inline-block;
+      margin: 0 10px;
+      padding: 10px 20px;
+      color: white;
+      background: #2c3e50;
+      border-radius: 5px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background 0.3s;
+    }
+    nav a:hover {
+      background: #34495e;
+    }
+    header {
+      background: #2c3e50;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin: 20px;
+    }
+    .card {
+      background: white;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+      margin: 15px;
+      width: 320px;
+      padding: 15px;
+    }
+    .card h3 {
+      margin-top: 10px;
+    }
+    .gallery {
+      position: relative;
+      overflow: hidden;
+      border-radius: 6px;
+    }
+    .gallery img {
+      width: 100%;
+      display: none;
+    }
+    .gallery img.active {
+      display: block;
+    }
+    .gallery button {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      background: rgba(0,0,0,0.5);
+      color: white;
+      border: none;
+      padding: 8px;
+      cursor: pointer;
+    }
+    .gallery .prev { left: 5px; }
+    .gallery .next { right: 5px; }
+    footer {
+      background: #2c3e50;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      margin-top: 30px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation bar -->
+  <nav>
+    <a href="index.html">Secret Lairs</a>
+    <a href="Sealed.html">Sealed Product</a>
+  </nav>
+
+  <header>
+    <h1>Magic: The Gathering – Secret Lairs for Sale</h1>
+  </header>
+
+
+
+  <div class="container">
+
+    <div class="card">
+      <h3>Secret Lair x Final Fantasy: Game Over</h3>
+      <div class="gallery">
+        <img src="https://cards.scryfall.io/normal/front/7/a/7ac9e188-ee9c-424b-8216-2f851d8165e5.jpg?1747972060" class="active" alt="Game Over 1">
+        <img src="https://cards.scryfall.io/normal/front/3/3/33da3281-1cf1-41ac-841a-e01521642779.jpg?1759418941" alt="Game Over 2">
+        <img src="https://cards.scryfall.io/normal/front/b/f/bf5666e6-e1bf-4f8e-acc0-d14df7362873.jpg?1747972052" alt="Game Over 3">
+        <img src="https://cards.scryfall.io/normal/front/7/4/740b8085-7459-49fc-ab89-601136408f2e.jpg?1747972048" alt="Game Over 4">
+        <img src="https://cards.scryfall.io/normal/front/4/f/4fdb466a-0a48-424a-b835-43c7980a95b4.jpg?1759415245" alt="Game Over 5">
+        <button class="prev">&#10094;</button>
+        <button class="next">&#10095;</button>
+      </div>
+      <p><strong>Price: C$130</strong></p>
+    </div>
+
+    <div class="card">
+      <h3>Secret Lair x Final Fantasy: Weapons</h3>
+      <div class="gallery">
+        <img src="https://cards.scryfall.io/normal/front/6/f/6f4ad71f-14e6-4b1e-9558-1400a36f27a9.jpg?1758104030" class="active" alt="Weapons 1">
+        <img src="https://cards.scryfall.io/normal/front/1/1/1138ab11-ab70-44df-9691-ddee39c3ae45.jpg?1747972039" alt="Weapons 2">
+        <img src="https://cards.scryfall.io/normal/front/3/2/32a46d1d-df85-4388-acd6-91818aa9af80.jpg?1759415758" alt="Weapons 3">
+        <img src="https://cards.scryfall.io/normal/front/9/e/9e42aded-44be-4b3a-9b2c-80ae43835e3d.jpg?1747972030" alt="Weapons 4">
+        <img src="https://cards.scryfall.io/normal/front/f/5/f5208aff-a33e-48d9-94eb-98a517099741.jpg?1747972024" alt="Weapons 5">
+        <button class="prev">&#10094;</button>
+        <button class="next">&#10095;</button>
+      </div>
+      <p><strong>Price: C$110</strong></p>
+    </div>
+
+    <div class="card">
+      <h3>Secret Lair x Final Fantasy: Grimoire</h3>
+      <div class="gallery">
+        <img src="https://cards.scryfall.io/normal/front/9/4/944db708-6b7d-4dc0-b3c0-2ddf130e4be3.jpg?1747972021" class="active" alt="Grimoire 1">
+        <img src="https://cards.scryfall.io/normal/front/4/5/45617b0f-fdac-4747-b2d3-d571b717008f.jpg?1747972018" alt="Grimoire 2">
+        <img src="https://cards.scryfall.io/normal/front/4/8/483b64f7-bec5-4800-bdd4-6b303c5ec20e.jpg?1747972014" alt="Grimoire 3">
+        <img src="https://cards.scryfall.io/normal/front/5/a/5a763474-5ce9-48cc-aaf8-8ca363df4430.jpg?1759413286" alt="Grimoire 4">
+        <img src="https://cards.scryfall.io/normal/front/e/6/e65a0c1e-97f7-440c-be96-0adf5003bc52.jpg?1747972006" alt="Grimoire 5">
+        <button class="prev">&#10094;</button>
+        <button class="next">&#10095;</button>
+      </div>
+      <p><strong>Price: C$90</strong></p>
+    </div>
+
+    <div class="card">
+      <h3>30th Anniversary Countdown Kit</h3>
+      <div class="gallery">
+        <img src="https://cards.scryfall.io/normal/front/c/5/c535f7f8-a57e-4ef1-91b4-5e3281bd4407.jpg?1682696336" class="active" alt="Countdown Kit 1">
+        <img src="https://cards.scryfall.io/normal/front/c/9/c9eb1309-5e60-4b8f-b63c-ebe62030db5c.jpg?1682696339"  alt="Countdown Kit 2">
+        <img src="https://cards.scryfall.io/normal/front/7/d/7dae100a-ea1d-45f3-b47c-b278cda462ad.jpg?1762359573"  alt="Countdown Kit 3">
+        <img src="https://cards.scryfall.io/normal/front/9/9/9911cc02-ef9a-458b-94d2-50af92ad6628.jpg?1682696347"  alt="Countdown Kit 4">
+        <img src="https://cards.scryfall.io/normal/front/5/6/56b80bce-1ff6-40e7-bfdd-af1ffc1918c6.jpg?1682696350"  alt="Countdown Kit 5">
+        <img src="https://cards.scryfall.io/normal/front/4/e/4e5b6e96-c1b8-44b8-90ab-2989e7463427.jpg?1682696354"  alt="Countdown Kit 6">
+        <img src="https://cards.scryfall.io/normal/front/6/d/6d6c51ea-21fd-46c2-9bdd-5f7b4438a1c3.jpg?1682696357"  alt="Countdown Kit 7">
+        <img src="https://cards.scryfall.io/normal/front/4/d/4d8dd50e-576a-4e19-9ac2-a3d444a759f1.jpg?1682696361"  alt="Countdown Kit 8">
+        <img src="https://cards.scryfall.io/normal/front/8/4/8476adaa-fd09-41c3-beda-0e2d654cb204.jpg?1682696383"  alt="Countdown Kit 9">
+        <img src="https://cards.scryfall.io/normal/front/f/9/f9052ad9-a8b3-4fa3-8cbe-223b306c8328.jpg?1682696387"  alt="Countdown Kit 10">
+        <img src="https://cards.scryfall.io/normal/front/e/0/e0d88029-2569-461b-a57d-1af10673f4cf.jpg?1759305590"  alt="Countdown Kit 11">
+        <img src="https://cards.scryfall.io/normal/front/2/3/23684d0f-c3c6-4b84-a5be-d6ca1085dae0.jpg?1682696390"  alt="Countdown Kit 12">
+        <img src="https://cards.scryfall.io/normal/front/6/c/6c542d42-e475-49d5-aeeb-be04d6e23646.jpg?1725938833"  alt="Countdown Kit 13">
+        <img src="https://cards.scryfall.io/normal/front/d/b/dbcdc29b-f84e-4ad4-a123-de578847a085.jpg?1682696398"  alt="Countdown Kit 14">
+        <img src="https://cards.scryfall.io/normal/front/b/f/bf4e917c-e5ab-435f-99ba-efc77862add4.jpg?1682696402"  alt="Countdown Kit 15">
+        <img src="https://cards.scryfall.io/normal/front/b/2/b2a6bfbc-24e9-4309-8490-0f0dbe74aae6.jpg?1682696405"  alt="Countdown Kit 16">
+        <img src="https://cards.scryfall.io/normal/front/3/5/35964154-94b0-4f3f-ae8f-b7f9e31118c8.jpg?1682696435"  alt="Countdown Kit 17">
+        <img src="https://cards.scryfall.io/normal/front/c/f/cf7a1b53-09ed-4206-8de5-ead09883af2f.jpg?1682696440"  alt="Countdown Kit 18">
+        <img src="https://cards.scryfall.io/normal/front/3/6/36df0c13-b7cb-44d6-85e1-17f2967a0f55.jpg?1682696445"  alt="Countdown Kit 19">
+        <img src="https://cards.scryfall.io/normal/front/9/7/9793f0a1-ab76-46e2-add2-200c2a9693b4.jpg?1682696449"  alt="Countdown Kit 20">
+        <img src="https://cards.scryfall.io/normal/front/9/1/9125f141-ee2c-4b9f-b9c1-9b9a779002d2.jpg?1759305593"  alt="Countdown Kit 21">
+        <img src="https://cards.scryfall.io/normal/front/3/0/305fd0ae-c89c-4935-a072-a85928f497e3.jpg?1682696452"  alt="Countdown Kit 22">
+        <img src="https://cards.scryfall.io/normal/front/0/1/019728bc-7d37-4384-81e5-97c47660c092.jpg?1682696456"  alt="Countdown Kit 23">
+        <img src="https://cards.scryfall.io/normal/front/6/1/6150ba46-ab04-4906-8497-8c7441c52442.jpg?1682696460"  alt="Countdown Kit 24">
+        <img src="https://cards.scryfall.io/normal/front/f/a/fa553e54-e6aa-499b-ac48-0cdbf6c37734.jpg?1759305600"  alt="Countdown Kit 25">
+        <img src="https://cards.scryfall.io/normal/front/2/7/2793c505-6736-4259-b9c6-6f9369fd476f.jpg?1682696464"  alt="Countdown Kit 26">
+        <img src="https://cards.scryfall.io/normal/front/2/4/24e85f3d-a2f5-43ac-937a-ebb754de2f8a.jpg?1682696468"  alt="Countdown Kit 27">
+        <img src="https://cards.scryfall.io/normal/front/8/9/89df04da-741b-4f98-8c49-f7f0bc13df31.jpg?1759033261"  alt="Countdown Kit 28">
+        <img src="https://cards.scryfall.io/normal/front/6/3/63fb443a-4023-4353-8060-c0db6b2c596b.jpg?1682696475"  alt="Countdown Kit 29">
+        <img src="https://cards.scryfall.io/normal/front/a/e/aedf907b-7d8e-4c6d-b3da-2aae1b327ee1.jpg?1682696478"  alt="Countdown Kit 30">
+        <img src="https://cards.scryfall.io/normal/front/1/7/177685fa-77d8-4828-b438-e0e62f9147b9.jpg?1729773832"  alt="Countdown Kit 31">
+        <button class="prev">&#10094;</button>
+        <button class="next">&#10095;</button>
+      </div>
+      <p><strong>Price: C$285</strong></p>
+    </div>
+
+    <div class="card">
+      <h3>Secret Lair x Hatsune Miku: Electric Entourage</h3>
+      <div class="gallery">
+        <img src="https://cards.scryfall.io/normal/front/a/7/a77b4416-61da-4cd5-b3f1-79238a8e2503.jpg?1759411551" class="active" alt="Electric Entourage 1">
+        <img src="https://cards.scryfall.io/normal/front/9/5/95d3a061-03b4-4004-8a6c-4374513de17a.jpg?1727566980" alt="Electric Entourage 2">
+        <img src="https://cards.scryfall.io/normal/front/3/7/37d595f6-7b51-4a4a-acb5-08e12bac6ea7.jpg?1727567034" alt="Electric Entourage 3">
+        <img src="https://cards.scryfall.io/normal/front/f/b/fb89c6b9-991a-453f-a787-7fb4c1642737.jpg?1727567067" alt="Electric Entourage 4">
+        <img src="https://cards.scryfall.io/normal/front/9/9/99a4035e-e8ec-4be0-8009-666bc7a5dd69.jpg?1759411931" alt="Electric Entourage 5">
+        <img src="https://cards.scryfall.io/normal/front/d/4/d4ecf1fd-f963-4bc0-8c01-ef781c14e463.jpg?1759415601" alt="Electric Entourage 6">
+        <button class="prev">&#10094;</button>
+        <button class="next">&#10095;</button>
+      </div>
+      <p><strong>Price: C$95</strong></p>
+    </div>
+
+    <div class="card">
+      <h3>Shades Not Included</h3>
+      <div class="gallery">
+        <img src="https://cards.scryfall.io/normal/front/c/7/c71446bd-08f2-41fe-ae44-db44814c8afb.jpg?1762359849" class="active" alt="Shades Not Included 1">
+        <img src="https://cards.scryfall.io/normal/front/b/d/bd081bbf-8e82-405c-a522-f826fa0a6e1d.jpg?1762359837" alt="Shades Not Included 2">
+        <img src="https://cards.scryfall.io/normal/front/0/8/085b4641-62fb-4820-aded-ccc9403d319e.jpg?1762359851" alt="Shades Not Included 3">
+        <img src="https://cards.scryfall.io/normal/front/d/d/dd8611ec-6db3-4d29-8d3b-01e87bb38a55.jpg?1762359842" alt="Shades Not Included 4">
+        <img src="https://cards.scryfall.io/normal/front/5/f/5fca5dbb-8d5e-4471-94f6-e0944cf60ed2.jpg?1762359822" alt="Shades Not Included 5">
+        <button class="prev">&#10094;</button>
+        <button class="next">&#10095;</button>
+      </div>
+      <p><strong>Price: C$65</strong></p>
+    </div>
+
+    <div class="card">
+      <h3>Secret Lair x Street Fighter</h3>
+      <div class="gallery">
+        <img src="https://cards.scryfall.io/normal/front/5/5/55ecf013-130d-4cf3-b47e-54b5fb718878.jpg?1757465087" class="active" alt="Street Fighter 1">
+        <img src="https://cards.scryfall.io/normal/front/d/6/d65a3a8b-ebf8-4e51-8b57-5b14e5cb7abb.jpg?1757465192" alt="Street Fighter 1">
+        <img src="https://cards.scryfall.io/normal/front/6/8/684f54a1-caf1-499e-aa71-e081a4dd916d.jpg?1757465283" alt="Street Fighter 1">
+        <img src="https://cards.scryfall.io/normal/front/2/6/26fecfd4-40c1-4ed3-bf58-22c7b98699a9.jpg?1757465346" alt="Street Fighter 1">
+        <img src="https://cards.scryfall.io/normal/front/c/2/c22ee4a5-c74b-46eb-b709-808ebc803757.jpg?1757465831" alt="Street Fighter 1">
+        <img src="https://cards.scryfall.io/normal/front/b/0/b0f32937-ca7e-407c-aa23-117b1eae9798.jpg?1757465775" alt="Street Fighter 1">
+        <img src="https://cards.scryfall.io/normal/front/e/2/e2fca7f9-ed46-440f-9ea3-225440fc5be5.jpg?1757465435" alt="Street Fighter 1">
+        <img src="https://cards.scryfall.io/normal/front/9/9/9976eb70-0d39-4882-8041-a4d29527c292.jpg?1757465727" alt="Street Fighter 1">
+        <img src="https://cards.scryfall.io/normal/front/2/7/27740ea5-79c8-420f-bc49-6d5eac58dac5.jpg?1759413279" alt="Street Fighter 1">
+        <button class="prev">&#10094;</button>
+        <button class="next">&#10095;</button>
+      </div>
+      <p><strong>Price: C$130</strong></p>
+    </div>
+
+    <div class="card">
+      <h3>Pictures of the Floating World (Japanese)</h3>
+      <div class="gallery">
+        <img src="https://cards.scryfall.io/normal/front/e/9/e9b431fd-7a4b-4cba-b5cb-554d7813b1f5.jpg?1682694838" class="active" alt="Floating World 1">
+        <img src="https://cards.scryfall.io/normal/front/1/c/1ce8a4de-02ea-4efd-873d-8d936d5b6893.jpg?1682693739" alt="Floating World 2">
+        <img src="https://cards.scryfall.io/normal/front/f/0/f0dc73d6-a2b1-4e19-92a5-fe03d1fb3bd2.jpg?1682691112" alt="Floating World 3">
+        <img src="https://cards.scryfall.io/normal/front/a/7/a776ebdf-6d32-4e8b-ab7f-ea16adf352bf.jpg?1682694075" alt="Floating World 4">
+        <img src="https://cards.scryfall.io/normal/front/8/5/851a7251-7af5-4137-8422-159314f7351a.jpg?1682692566" alt="Floating World 5">
+        <button class="prev">&#10094;</button>
+        <button class="next">&#10095;</button>
+      </div>
+      <p><strong>Price: C$50</strong></p>
+    </div>
+    <div class="card">
+  <h3>Showcase: Neon Dynasty (Neon Ink)</h3>
+  <div class="gallery">
+    <img src="https://cards.scryfall.io/normal/front/1/a/1a43d9e8-3320-4873-b322-b323c792ce5e.jpg?1682690874" class="active" alt="Neon Ink 1">
+    <img src="https://cards.scryfall.io/normal/front/d/b/db826546-6a96-4272-b72f-d1d2be78b318.jpg?1682690817" alt="Neon Ink 2">
+    <img src="https://cards.scryfall.io/normal/front/7/c/7ca68ea1-5aad-4d08-b460-768f5a91f1fa.jpg?1682712696" alt="Neon Ink 3">
+    <img src="https://cards.scryfall.io/normal/front/1/b/1b0d75ad-82a9-4145-ba3c-df4a86bd91d7.jpg?1682691009" alt="Neon Ink 4">
+    <button class="prev">&#10094;</button>
+    <button class="next">&#10095;</button>
+  </div>
+  <p><strong>Price: C$95</strong></p>
+</div>
+
+<div class="card">
+  <h3>Special Guest: Yuko Shimizu</h3>
+  <div class="gallery">
+    <img src="https://cards.scryfall.io/normal/front/f/b/fb2c8052-f995-4a8a-b63c-dbe2e8a22498.jpg?1682691107" class="active" alt="Yuko Shimizu 1">
+    <img src="https://cards.scryfall.io/normal/front/e/0/e0e26f6c-44e9-4d6f-8eb1-efdef8d04ff5.jpg?1682692144" alt="Yuko Shimizu 2">
+    <img src="https://cards.scryfall.io/normal/front/d/e/ded4ab9d-91af-4cb9-90dc-b6bd6897b1ed.jpg?1682712895" alt="Yuko Shimizu 3">
+    <img src="https://cards.scryfall.io/normal/front/0/2/024110ee-5520-49f8-afab-54dcce87c650.jpg?1682712958" alt="Yuko Shimizu 4">
+    <button class="prev">&#10094;</button>
+    <button class="next">&#10095;</button>
+  </div>
+  <p><strong>Price: $50 CAD</strong></p>
+</div>
+
+<div class="card">
+  <h3>Introducing: Kaito Shizuki</h3>
+  <div class="gallery">
+    <img src="https://cards.scryfall.io/normal/front/d/3/d33ff8fc-b2b7-4cd9-8724-b926459b519d.jpg?1711892780" class="active" alt="Kaito Shizuki 1">
+    <img src="https://cards.scryfall.io/normal/front/e/b/eb0cb4bc-c2de-4d4a-8daa-df68350239a9.jpg?1711892761" alt="Kaito Shizuki 2">
+    <img src="https://cards.scryfall.io/normal/front/b/8/b8d53b6d-edce-47eb-84a9-528cd60f18e2.jpg?1682693981" alt="Kaito Shizuki 3">
+    <img src="https://cards.scryfall.io/normal/front/d/7/d7a28148-7f9a-4a96-a878-fc15476c5820.jpg?1682694517" alt="Kaito Shizuki 4">
+    <img src="https://cards.scryfall.io/normal/front/1/0/10be9a82-4008-45ae-a739-fdee95e39619.jpg?1711892785" alt="Kaito Shizuki 5">
+    <button class="prev">&#10094;</button>
+    <button class="next">&#10095;</button>
+  </div>
+  <p><strong>Price: $70 CAD</strong></p>
+</div>
+
+<div class="card">
+  <h3>Kamigawa: The Manga: The Cards</h3>
+  <div class="gallery">
+    <img src="https://cards.scryfall.io/normal/front/d/0/d0ccb445-53dc-40d7-abea-d6d8dff60ce4.jpg?1675604922" class="active" alt="Kamigawa Manga 1">
+    <img src="https://cards.scryfall.io/normal/front/a/0/a004dc79-3857-4663-930c-59b2240e84bc.jpg?1675604924" alt="Kamigawa Manga 2">
+    <img src="https://cards.scryfall.io/normal/front/b/9/b9e8c1c1-1917-4858-afd1-ea4412d02375.jpg?1675604925" alt="Kamigawa Manga 3">
+    <img src="https://cards.scryfall.io/normal/front/5/c/5c4e9151-d8b7-43f6-ac21-a8760cc04c7a.jpg?1675604923" alt="Kamigawa Manga 4">
+    <img src="https://cards.scryfall.io/normal/front/d/7/d727c345-4c96-4087-bfe3-f54b47b01da6.jpg?1675604927" alt="Kamigawa Manga 5">
+    <button class="prev">&#10094;</button>
+    <button class="next">&#10095;</button>
+  </div>
+  <p><strong>Price: $85 CAD</strong></p>
+</div>
+
+<div class="card">
+  <h3>Secret Lair x Tomb Raider</h3>
+  <div class="gallery">
+    <img src="https://cards.scryfall.io/normal/front/0/9/098c976b-6096-4ac7-8d52-2f219ae21d1f.jpg?1706570525" class="active" alt="Tomb Raider 1">
+    <img src="https://cards.scryfall.io/normal/front/6/1/6168edd9-0e1b-4ff9-b1c4-18d56866858a.jpg?1759415024" alt="Tomb Raider 2">
+    <img src="https://cards.scryfall.io/normal/front/1/b/1b1665ec-7617-4754-b604-656411f7476a.jpg?1759411272" alt="Tomb Raider 3">
+    <img src="https://cards.scryfall.io/normal/front/0/4/04dfd2d0-bdd4-485d-a8a3-d3c3ad31014b.jpg?1748265332" alt="Tomb Raider 4">
+    <img src="https://cards.scryfall.io/normal/front/d/a/da507391-4dbd-4fff-8c81-db64bfa4162f.jpg?1700086987" alt="Tomb Raider 5">
+    <img src="https://cards.scryfall.io/normal/front/2/b/2b6b2979-a887-4ad8-b123-4aea916de36a.jpg?1699917336" alt="Tomb Raider 6">
+    <img src="https://cards.scryfall.io/normal/front/c/b/cb7c6d71-c575-4c1b-a161-a4d4186ea9c6.jpg?1699887997" alt="Tomb Raider 7">
+    <img src="https://cards.scryfall.io/normal/front/d/a/da57f710-7af0-44f0-9070-47e1b7c3560e.jpg?1733170232" alt="Tomb Raider 8">
+    <button class="prev">&#10094;</button>
+    <button class="next">&#10095;</button>
+  </div>
+  <p><strong>Price: C$260</strong></p>
+</div>
+
+<div class="card">
+  <h3>Totally Spaced Out (Galaxy Foil)</h3>
+  <div class="gallery">
+    <img src="https://cards.scryfall.io/normal/front/7/a/7a28aa07-8b36-4048-9b71-dcb34b96068a.jpg?1674337729" class="active" alt="Galaxy Foil 1">
+    <img src="https://cards.scryfall.io/normal/front/2/1/214ed19f-65c4-4459-9bb9-65156a62e84d.jpg?1674337718" alt="Galaxy Foil 2">
+    <img src="https://cards.scryfall.io/normal/front/5/2/5227dec4-5015-462b-94e9-a1dda8b9de49.jpg?1674337706" alt="Galaxy Foil 3">
+    <img src="https://cards.scryfall.io/normal/front/5/7/570ecdd3-ad07-4445-9172-81a185a0d838.jpg?1674337698" alt="Galaxy Foil 4">
+    <button class="prev">&#10094;</button>
+    <button class="next">&#10095;</button>
+  </div>
+  <p><strong>Price: C$230</strong></p>
+</div>
+
+<div class="card">
+  <h3>Artist Series: Livia Prima</h3>
+  <div class="gallery">
+    <img src="https://cards.scryfall.io/normal/front/c/f/cf75f895-3481-4c21-a85f-c819613bccc3.jpg?1655154593" class="active" alt="Livia Prima 1">
+    <img src="https://cards.scryfall.io/normal/front/3/9/39059423-c4f6-4371-b530-48cdc36e513f.jpg?1664203936" alt="Livia Prima 2">
+    <img src="https://cards.scryfall.io/normal/front/b/a/ba320b49-5f1a-4487-8d75-504c534cf522.jpg?1655154676" alt="Livia Prima 3">
+    <img src="https://cards.scryfall.io/normal/front/0/f/0f860fcf-eda1-4a83-9be7-80b7c34fff94.jpg?1655154709" alt="Livia Prima 4">
+    <img src="https://cards.scryfall.io/normal/front/a/8/a890887b-38ed-4794-99d1-f1a574428d2b.jpg?1668120823" alt="Livia Prima 5">
+    <button class="prev">&#10094;</button>
+    <button class="next">&#10095;</button>
+  </div>
+  <p><strong>Price: C$50</strong></p>
+</div>
+
+<div class="card">
+  <h3>Special Guest: Junji Ito (Etched)</h3>
+  <div class="gallery">
+    <img src="https://cards.scryfall.io/normal/front/c/0/c0e175cb-ffea-473f-8422-53273f263016.jpg?1682690026" class="active" alt="Junji Ito 1">
+    <img src="https://cards.scryfall.io/normal/front/6/0/60cb8aec-21cf-49c1-8407-e45afe377f4f.jpg?1682690524" alt="Junji Ito 2">
+    <img src="https://cards.scryfall.io/normal/front/6/3/63a10efc-4b8d-4e32-90fb-50ab73810b59.jpg?1682693260" alt="Junji Ito 3">
+    <img src="https://cards.scryfall.io/normal/front/1/e/1ecc64b6-6f2c-4b20-aa80-54cc47382606.jpg?1682694439" alt="Junji Ito 4">
+    <button class="prev">&#10094;</button>
+    <button class="next">&#10095;</button>
+  </div>
+  <p><strong>Price: C$230</strong></p>
+</div>
+
+<div class="card">
+  <h3>Rule the Room</h3>
+  <div class="gallery">
+    <img src="https://cards.scryfall.io/normal/front/2/5/25e475d2-a813-43d0-aa6b-4a16e92d7375.jpg?1682712708" class="active" alt="Rule the Room 1">
+    <img src="https://cards.scryfall.io/normal/front/a/4/a4ff3bdd-bfd0-4cea-9493-85632b126cf1.jpg?1682712496" alt="Rule the Room 2">
+    <img src="https://cards.scryfall.io/normal/front/a/1/a15bebe2-ae6a-48b4-b203-5ab78996b86f.jpg?1682693351" alt="Rule the Room 3">
+    <img src="https://cards.scryfall.io/normal/front/d/f/df93b357-f1be-423a-96c3-a4ceecdeb441.jpg?1682693546" alt="Rule the Room 4">
+    <button class="prev">&#10094;</button>
+    <button class="next">&#10095;</button>
+  </div>
+  <p><strong>Price: C$50</strong></p>
+</div>
+
+<div class="card">
+  <h3>The Space Beyond the Stars</h3>
+  <div class="gallery">
+    <img src="https://cards.scryfall.io/normal/front/e/7/e75a663c-f12f-49d6-b84f-3f941049872e.jpg?1682691717" class="active" alt="Space Beyond 1">
+    <img src="https://cards.scryfall.io/normal/front/8/2/8201c6c9-c7c2-405c-b61d-77e7f3a9a1ca.jpg?1682694081" alt="Space Beyond 2">
+    <img src="https://cards.scryfall.io/normal/front/a/6/a6989d1d-00ca-4d5d-acdc-0b7c6a522e30.jpg?1682695072" alt="Space Beyond 3">
+    <img src="https://cards.scryfall.io/normal/front/2/5/25d6d636-51f1-4f98-94af-5307c3399dae.jpg?1682694829" alt="Space Beyond 4">
+    <button class="prev">&#10094;</button>
+    <button class="next">&#10095;</button>
+  </div>
+  <p><strong>Price: C$85</strong></p>
+</div>
+
+<div class="card">
+  <h3>Through the Wormhole (Galaxy Foil)</h3>
+  <div class="gallery">
+    <img src="https://cards.scryfall.io/normal/front/a/1/a1218c13-3b70-419f-bf95-84b04f2479f5.jpg?1733156620" class="active" alt="Wormhole 1">
+    <img src="https://cards.scryfall.io/normal/front/c/f/cf977357-e13d-4c67-ae53-397adf55131e.jpg?1733154348" alt="Wormhole 2">
+    <img src="https://cards.scryfall.io/normal/front/9/b/9b840da3-2818-4fed-8cff-19754ab1efdc.jpg?1733154867" alt="Wormhole 3">
+    <img src="https://cards.scryfall.io/normal/front/2/1/21365def-bec7-4ec0-a1e9-34c85bf6c274.jpg?1733155399" alt="Wormhole 4">
+    <img src="https://cards.scryfall.io/normal/front/f/d/fd71be2d-5ffc-418e-92d0-a36cf10ac5d6.jpg?1733158977" alt="Wormhole 5">
+    <img src="https://cards.scryfall.io/normal/front/7/c/7c36efb0-1a5b-4576-b5d9-c9b966716f65.jpg?1733159570" alt="Wormhole 6">
+    <button class="prev">&#10094;</button>
+    <button class="next">&#10095;</button>
+  </div>
+  <p><strong>Price: $480 CAD</strong></p>
+</div>
+
+<div class="card">
+  <h3>The Weirdest Pets in the Multiverse</h3>
+  <div class="gallery">
+    <img src="https://cards.scryfall.io/normal/front/d/1/d15bd831-aa75-42c1-905c-6e8cc644c7fc.jpg?1682692196" class="active" alt="Weird Pets 1">
+    <img src="https://cards.scryfall.io/normal/front/a/2/a28c7fe5-bc61-4fc2-acb9-810f2e4ec682.jpg?1682694087" alt="Weird Pets 2">
+    <img src="https://cards.scryfall.io/normal/front/c/8/c818547c-a6f6-4c69-9e4d-33741e605093.jpg?1682712587" alt="Weird Pets 3">
+    <img src="https://cards.scryfall.io/normal/front/d/1/d1965955-57fc-4447-8b60-de1d81617204.jpg?1682694773" alt="Weird Pets 4">
+    <img src="https://cards.scryfall.io/normal/front/b/5/b536948f-9a29-4811-a3b2-9d3f73117965.jpg?1682694899" alt="Weird Pets 5">
+    <button class="prev">&#10094;</button>
+    <button class="next">&#10095;</button>
+  </div>
+  <p><strong>Price: $60 CAD</strong></p>
+</div>
+
+<div class="card">
+  <h3>If Looks Could Kill</h3>
+  <div class="gallery">
+    <img src="https://cards.scryfall.io/normal/front/d/9/d974a337-3139-43ff-a368-6f3d10f53646.jpg?1682689759" class="active" alt="If Looks Could Kill 1">
+    <img src="https://cards.scryfall.io/normal/front/1/b/1bc8751d-0eb6-46fd-88a6-7dd5255a1077.jpg?1666049688" alt="If Looks Could Kill 2">
+    <img src="https://cards.scryfall.io/normal/front/8/5/85397a1d-1fd1-4ca1-a1fc-f32e3a063c81.jpg?1682693398" alt="If Looks Could Kill 3">
+    <img src="https://cards.scryfall.io/normal/front/2/f/2f038672-d03c-4349-9261-1b76ae4594c6.jpg?1682689605" alt="If Looks Could Kill 4">
+    <button class="prev">&#10094;</button>
+    <button class="next">&#10095;</button>
+  </div>
+  <p><strong>Price: $55 CAD</strong></p>
+</div>
+
+<div class="card">
+  <h3>Special Guest: Yoji Shinkawa</h3>
+  <div class="gallery">
+    <img src="https://cards.scryfall.io/normal/front/e/7/e7501a66-76f8-4f1d-8b4c-2a82b5f930c4.jpg?1682693140" class="active" alt="Yoji Shinkawa 1">
+    <img src="https://cards.scryfall.io/normal/front/6/2/62835e03-49c8-42b8-91ba-3aa4beb5df66.jpg?1670956876" alt="Yoji Shinkawa 2">
+    <img src="https://cards.scryfall.io/normal/front/3/6/3668996e-659d-413b-84e6-9f3099518d7f.jpg?1682693957" alt="Yoji Shinkawa 3">
+    <img src="https://cards.scryfall.io/normal/front/9/b/9b89b2e5-a34c-48a0-a054-6a459ebe60c9.jpg?1682694018" alt="Yoji Shinkawa 4">
+    <button class="prev">&#10094;</button>
+    <button class="next">&#10095;</button>
+  </div>
+  <p><strong>Price: $225 CAD</strong></p>
+</div>
+  </div>
+
+  <script>
+    // Simple gallery script
+    document.querySelectorAll('.gallery').forEach(gallery => {
+      let images = gallery.querySelectorAll('img');
+      let index = 0;
+
+      gallery.querySelector('.next').addEventListener('click', () => {
+        images[index].classList.remove('active');
+        index = (index + 1) % images.length;
+        images[index].classList.add('active');
+      });
+
+      gallery.querySelector('.prev').addEventListener('click', () => {
+        images[index].classList.remove('active');
+        index = (index - 1 + images.length) % images.length;
+        images[index].classList.add('active');
+      });
+    });
+  </script>
+</body>
+</html>
